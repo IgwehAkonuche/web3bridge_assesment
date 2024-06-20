@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-Working Space Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Co-Working Space Booking System</h1>
+    </header>
+    <main>
+        <section id="desks">
+            <!-- Desk availability will be dynamically generated here -->
+        </section>
+        <section id="booking-form">
+            <h2>Book a Desk</h2>
+            <form id="deskBookingForm">
+                <label for="deskType">Desk Type:</label>
+                <select id="deskType" required>
+                    <option value="">Select Desk Type</option>
+                    <option value="individual">Individual Desk</option>
+                    <option value="team">Team Desk</option>
+                </select>
+                <label for="membershipType">Membership Type:</label>
+                <select id="membershipType" required>
+                    <option value="">Select Membership Type</option>
+                    <option value="basic">Basic</option>
+                    <option value="premium">Premium</option>
+                    <option value="executive">Executive</option>
+                </select>
+                <label for="bookingTime">Booking Time:</label>
+                <input type="datetime-local" id="bookingTime" required>
+                <button type="submit">Book Desk</button>
+            </form>
+        </section>
+    </main>
+    <aside id="dashboard">
+        <h2>Revenue Dashboard</h2>
+        <div id="revenueDetails">
+            <!-- Revenue details will be dynamically updated here -->
+        </div>
+    </aside>
+    <script src="script.js"></script>
+</body>
+</html>
